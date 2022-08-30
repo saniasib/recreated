@@ -38,7 +38,7 @@ jobs:
          with:
            name: rez-ytb
            path: |
-            revanced-*-non-root.apk
+            rez-*.apk
             vanced-microg.apk
 
        - name: Build youtube-music variant
@@ -52,7 +52,7 @@ jobs:
          uses: actions/upload-artifact@v3
          with:
            name: rez-music
-           path: revanced-music-*-non-root.apk
+           path: rez-music-*.apk
 
        - name: Build twitter variant
          run: |
@@ -65,7 +65,7 @@ jobs:
          uses: actions/upload-artifact@v3
          with:
            name: rez-twitter
-           path: revanced-twitter-*-non-root.apk
+           path: rez-twitter-*.apk
 
        - name: Build tiktok variant
          run: |
@@ -76,4 +76,4 @@ jobs:
          uses: actions/upload-artifact@v3
          with:
            name: rez-tiktok
-           path: revanced-tiktok-*-non-root.apk
+           path: rez-tiktok-*.apk
